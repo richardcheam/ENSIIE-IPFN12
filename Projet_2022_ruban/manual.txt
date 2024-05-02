@@ -1,0 +1,40 @@
+********
+
+- About this program
+There are 3 phases:
+Phase 1 and 2 are the same which will print out the message by reading the instructions inside .prog file
+Phase 3 will print the instructions that will generate a text or message accordingly to what is inside .msg file
+
+******** 
+
+- Execution 
+In terminal, move yourself into the directory which contains the program (.ml) and move the tests file (.prog & .msg) outside of the their directory respectively
+
+Once again make sure that you're in the right directory by having all files in the same directory( .ml, .prog, .msg).
+
+Using Makefile, in terminal, without the $ sign, type the following prompt command, then the usage will be provided
+
+$ make
+
+Usage : ./squelette <1|2|3> <file> 
+
+Manually done, in terminal type the following command without $ sign, there are two possibilities to do so : 
+
+$ ocamlc squelette.ml
+$ ocamlopt squelette.ml
+
+Usage : ./a.out <1|2|3> <file> 
+
+******** 
+
+Example: $ocamlc squelette.ml
+	 $./a.out 2 hello.prog
+
+	 $make 
+	 $squelette 2 hello.prog
+
+******** 
+
+Remove the executable files by typing the following command without the $ sign: 
+
+$make clean
